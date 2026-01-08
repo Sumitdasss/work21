@@ -1,1 +1,17 @@
 @import "tailwindcss";
+@plugin "daisyui";
+@theme{
+    --spacing-mContainer:1440px;
+    --spacing-mContainer2:1800px;
+    --color-primary1:#E53E3E;
+    --color-primary2:#E8E8E8;
+    --color-primary3:#1A1A1A;
+    --color-primary4:#F5F6F2;
+    --color-primary5:#74787C;
+    --color-primary6:#E7E7E7;
+    --color-primary7:#E9E9E9;
+    --color-primary7:#F1F1F1;
+    
+    --font-display-primary1: "Zalando Sans SemiExpanded", sans-serif; 
+
+}
