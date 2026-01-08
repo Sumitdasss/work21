@@ -2,7 +2,7 @@
 @plugin "daisyui";
 @theme{
     --spacing-mContainer:1440px;
-    --spacing-mContainer2:1800px;
+    --spacing-mContainer2:1950px;
     --color-primary1:#E53E3E;
     --color-primary2:#E8E8E8;
     --color-primary3:#1A1A1A;
@@ -11,6 +11,7 @@
     --color-primary6:#E7E7E7;
     --color-primary7:#E9E9E9;
     --color-primary7:#F1F1F1;
+    --color-primary8:#E53E3E;
     
     --font-display-primary1: "Zalando Sans SemiExpanded", sans-serif; 
 

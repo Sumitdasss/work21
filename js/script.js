@@ -55,6 +55,14 @@ $('.slider').slick({
   autoplay: true,
   autoplaySpeed: 2000,
 
-  prevArrow: '<button type="button" class="absolute top-[-80px] right-[80px]  z-10 w-[45px] h-[45px] bg-primary7 text-primary5 rounded-full hover:bg-primary1 transition-all hover:text-white"><i class="fa-solid fa-arrow-left"></i></button>',
-  nextArrow: '<button type="button" class="absolute top-[-80px] right-[0px]  z-10 w-[45px] h-[45px] bg-primary7 text-primary5 rounded-full hover:bg-primary1  transition-all hover:text-white"><i class="fa-solid fa-arrow-right"></i></button>'
+  prevArrow: '<button type="button" class="absolute top-[-80px] right-[80px]  z-10 w-[45px] h-[45px] cursor-pointer bg-primary7 text-primary5 rounded-full hover:bg-primary1 hover:duration-500 transition-all hover:text-white"><i class="fa-solid fa-arrow-left"></i></button>',
+  nextArrow: '<button type="button" class="absolute top-[-80px] right-[0px]  z-10 w-[45px] h-[45px] cursor-pointer bg-primary7 text-primary5 rounded-full hover:bg-primary1 hover:duration-500 transition-all hover:text-white"><i class="fa-solid fa-arrow-right"></i></button>'
+});
+$('.slider1').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  arrows:false
+  
 });
