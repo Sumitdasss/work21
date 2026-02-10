@@ -76,6 +76,7 @@ accountBtn.addEventListener("click",()=>{
 Homepage.classList.add("hidden")
 loginPage.classList.remove("hidden")
 shopPart.classList.add("hidden")
+produckDetalspart.classList.add("hidden")
 
 })
 
@@ -87,6 +88,7 @@ Registerbtn.addEventListener("click",()=>{
 Homepage.classList.add("hidden")
 loginPage.classList.add("hidden")
 Register.classList.remove("hidden")
+produckDetalspart.classList.add("hidden")
 
 })
 
@@ -97,6 +99,7 @@ loginbtn.addEventListener("click",()=>{
 Homepage.classList.add("hidden")
 loginPage.classList.remove("hidden")
 Register.classList.add("hidden")
+
 
 })
 
@@ -124,6 +127,7 @@ loginPage.classList.add("hidden")
 Register.classList.add("hidden")
 shopPart.classList.remove("hidden")
 pageNumbertwo.classList.add("hidden")
+ produckDetalspart.classList.add("hidden")
 
 
 })
@@ -215,4 +219,91 @@ listTypethree.classList.remove("hidden")
 
 
 
+let total = 0;
+const cartItemsList = document.getElementById('cart-items');
+const totalPriceDisplay = document.getElementById('total-price');
 
+
+document.querySelectorAll('.add-to-cart').forEach(button => {
+    button.addEventListener('click', () => {
+        const name = button.getAttribute('data-name');
+        const price = parseFloat(button.getAttribute('data-price'));
+
+      
+        const li = document.createElement('li');
+        li.innerText = `${name} - $${price}`;
+        cartItemsList.appendChild(li);
+
+ 
+        total += price;
+        totalPriceDisplay.innerText = total.toFixed(2);
+        
+       
+    });
+});
+
+
+let plusButton = document.getElementById("plusButton");
+let box = document.getElementById("box");
+let minusButton = document.getElementById("minusButton"); 
+
+let count = 0;
+
+plusButton.addEventListener("click", () => {
+  if (count < 100) {
+    count++;
+    box.innerText = count;
+    
+  }
+});
+
+minusButton.addEventListener("click", () => {
+ 
+  if (count > 0) {
+    count--;
+    box.innerText = count;
+    
+  }
+});
+
+
+ 
+ let descriptionButton= document.getElementById("descriptionButton");
+ let informationButton= document.getElementById("informationButton");
+ let reviewsButton= document.getElementById("reviewsButton");
+ let descriptionPart = document.getElementById("descriptionPart");
+ let informationPart = document.getElementById("informationPart");
+ let reviewsPart= document.getElementById("reviewsPart");
+  
+ descriptionButton.addEventListener("click",()=>{
+descriptionPart.classList.remove("hidden")
+informationPart.classList.add("hidden")
+reviewsPart.classList.add("hidden")
+
+
+ })
+
+informationButton.addEventListener("click",()=>{
+  descriptionPart.classList.add("hidden")
+informationPart.classList.remove("hidden")
+reviewsPart.classList.add("hidden")
+ })
+
+reviewsButton.addEventListener("click",()=>{
+  descriptionPart.classList.add("hidden")
+informationPart.classList.add("hidden")
+reviewsPart.classList.remove("hidden")
+ })
+
+ let produckDetalspart=document.getElementById("produckDetalspart")
+ let ditels=document.querySelectorAll(".ditels")
+
+
+
+ditels.forEach((button, index) => {
+    button.addEventListener("click", () => {
+      produckDetalspart.classList.remove("hidden")
+      shopPart.classList.add("hidden")
+      
+    });
+});
