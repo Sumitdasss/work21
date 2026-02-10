@@ -300,7 +300,7 @@ reviewsPart.classList.remove("hidden")
 
 
 
-ditels.forEach((button, index) => {
+ditels.forEach((button,index) => {
     button.addEventListener("click", () => {
       produckDetalspart.classList.remove("hidden")
       shopPart.classList.add("hidden")
