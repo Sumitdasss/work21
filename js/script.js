@@ -307,3 +307,24 @@ ditels.forEach((button,index) => {
       
     });
 });
+
+
+
+
+function changeDetails(name,newPrice,oldPrice,imgList) {
+    
+    document.getElementById('p-name').innerText = name;
+    document.getElementById('price').innerHTML = `<span class="text-[18px] font-bold text-[#222222]">${newPrice} </span>${oldPrice}`;
+
+   
+   
+
+   const allSlots = document.querySelectorAll('.img1');
+
+    allSlots.forEach((slot, index) => {
+        if(imgList[index]) {
+            slot.src = imgList[index];
+            
+        } 
+    });
+}
