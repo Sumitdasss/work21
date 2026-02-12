@@ -124,7 +124,7 @@
             <div class="w-auto h-[50px] flex items-center ">
             
             <div class="w-[45px] h-[45px] bg-primary4 text-white flex justify-center items-center ml-4 rounded-full ">
-         <a href=""> <i class="fa-solid fa-cart-shopping text-primary3"></i></a>
+         <button id="Cartbutton" class=""> <i class="fa-solid fa-cart-shopping text-primary3"></i></button>
             </div>
             <div class="">
 <h4 class="text-[14px] text-primary5 font-normal pl-[10px]">Your cart,</h4>
@@ -161,6 +161,165 @@
        
     </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+<!-- shop Cart part -->
+ <div id="mainCart" class="pb-[100px]">
+<div class="bg-[url(../imges/slider.png)] bg-no-repeat bg-cover bg-center  pt-[140px] pb-[120px]">
+    <div class="max-w-mContainer mx-auto">
+
+        <div class="flex justify-between">
+                 <h1 class="text-primary3 text-[48px] font-bold uppercase leading-[60px] l">Cart Page</h1>
+            
+        <div class="">
+           <ul class="flex gap-x-1">
+            <li><a href="" class="text-primary5 text-[18px] font-medium group hover:text-primary1 hover:duration-500 ">Home <i class="fa-solid fa-chevron-right group-hover:rotate-180 hover:transition-all 0.6s"></i></a></li>
+            <li><a href="" class="text-primary3 text-[18px] font-semibold">Cart Page</a></li>
+           </ul>
+
+        </div>
+        </div>
+    </div>
+</div>
+
+
+<div  class="">
+ <div class="max-w-mContainer mx-auto">
+    <div class="flex justify-between mt-[100px]">
+    <div class="">
+<div class="w-[952px] pb-[30px] bg-[#F6F6F7]">
+<div class="flex  h-[61px] items-center border-b-3 border-black/50">
+    <p class="text-[18px] text-[#74787C] font-semibold pl-[200px]">Products</p>
+    <p class="text-[18px] text-[#74787C] font-semibold  pl-[250px]">Price</p>
+    <p class="text-[18px] text-[#74787C] font-semibold  pl-[110px]">Quantity</p>
+    <p class="text-[18px] text-[#74787C] font-semibold  pl-[65px]">SubTotal</p>
+
+</div>
+
+<div id="addtoCartpart" class="mt-[20px]">
+
+</div>
+
+<div class="flex mt-[30px]">
+<div class="ml-[30px]">
+   <input type="text" placeholder="Cupon Code" class="w-[296px] h-[61px] rounded-lg bg-white border-3 border-black/50 focus:outline-none pl-[15px] placeholder:text-[#74787C]/50"> 
+   <button class="px-7.5 py-4 bg-white border-3 font-semibold rounded-lg border-black/50 text-[#222222] uppercase">Apply Coupon</button>
+   <button id="updateCart" class="px-7.5 py-4 bg-red-500 font-semibold rounded-lg text-white uppercase ml-[205px]">Update Cart</button>
+
+</div>
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+<div class="">
+
+
+<div class="w-[450px] bg-[#F9F9F9] p-8 border border-gray-100 rounded-sm font-sans">
+    <h2 class="text-[22px] font-bold text-[#222222] mb-6 pb-4 border-b border-gray-200">
+        Cart Totals
+    </h2>
+
+    <div class="flex justify-between items-center py-6 border-b border-gray-200">
+        <span class="text-[16px] text-[#74787C] font-medium">Subtotal</span>
+        <span id="number" class="text-[18px] font-bold text-[#222222]">$0.00</span>
+    </div>
+
+    <div class="py-8 border-b border-gray-200">
+        <div class="flex justify-between mb-4">
+            <span class="text-[16px] text-[#74787C] font-medium">Shipping</span>
+            <div class="text-right space-y-3">
+                <label class="flex items-center justify-end gap-3 cursor-pointer">
+                    <span class="text-[16px] text-[#444444]">Free Shipping</span>
+                    <input type="radio" name="shipping" checked class="w-4 h-4 accent-black">
+                </label>
+                <label class="flex items-center justify-end gap-3 cursor-pointer">
+                    <span class="text-[16px] text-[#444444]">Flat Rate</span>
+                    <input type="radio" name="shipping" class="w-4 h-4 accent-black">
+                </label>
+                <label class="flex items-center justify-end gap-3 cursor-pointer">
+                    <span class="text-[16px] text-[#444444]">Local Pickup</span>
+                    <input type="radio" name="shipping" class="w-4 h-4 accent-black">
+                </label>
+            </div>
+        </div>
+        
+        <p class="text-[14px] text-[#74787C] text-right mt-4 leading-relaxed">
+            Shipping options will be updated <br> during checkout
+        </p>
+        
+        <div class="text-right mt-2">
+            <button class="text-[15px] font-bold text-[#222222] hover:underline transition-all">
+                Calculate Shipping
+            </button>
+        </div>
+    </div>
+
+    <div class="flex justify-between items-center py-8">
+        <span class="text-[16px] text-[#74787C] font-medium">Total</span>
+        <span id="totalnumber" class="text-[22px] font-bold text-[#222222]">$0.00</span>
+    </div>
+
+    <button class="w-full bg-[#EF4444] text-white py-4 text-[16px] font-bold uppercase tracking-wider rounded-md hover:bg-[#D93636] transition-all duration-300">
+        Proceed to Checkout
+    </button>
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+ </div>
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+<!-- shop Cart part -->
+
+
+
+
+
+
 
 
 
@@ -3596,7 +3755,7 @@ donec duis primis nam faucibus augue malesuada venenatis</p>
 
 
     </div>
-    <button class="text-[16px] font-semibold text-[#222222]  cursor-pointer w-[475px] h-[51px] bg-white border-2 border-[#74787C]/50 rounded-lg">ADD TO CART</button>
+    <button onclick="triggerAddToCart()" class="text-[16px] font-semibold text-[#222222]  cursor-pointer w-[475px] h-[51px] bg-white border-2 border-[#74787C]/50 rounded-lg">ADD TO CART</button>
 </div>
 <button class="text-[16px] font-semibold text-[#222222] mt-[20px]  cursor-pointer w-full h-[51px] bg-red-500 text-white  rounded-lg uppercase">Buy The Item Now</button>
 <button class="text-[16px] font-semibold text-[#222222] mt-[20px]  cursor-pointer "><i class="fa-solid fa-code-compare"></i><span class="pl-[10px]">
@@ -3797,6 +3956,17 @@ Log in
 
 
 </div>
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- Register part start-->
 

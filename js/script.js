@@ -174,6 +174,8 @@ secondPage.classList.add("hidden")
 gridBtn.addEventListener("click",()=>{
 listType.classList.add("hidden")
 gridType.classList.remove("hidden")
+listTypetwo.classList.add("hidden")
+listTypethree.classList.add("hidden")
 secondPage.classList.add("hidden")
 pageNumber.classList.remove("hidden")
 pageNumbertwo.classList.add("hidden")
@@ -190,6 +192,7 @@ listBtn.addEventListener("click",()=>{
 gridType.classList.add("hidden")
 listType.classList.remove("hidden")
 secondPage.classList.add("hidden")
+thardePage.classList.add("hidden")
 pageNumber.classList.add("hidden")
 pageNumbertwo.classList.remove("hidden")
 
@@ -311,20 +314,180 @@ ditels.forEach((button,index) => {
 
 
 
-function changeDetails(name,newPrice,oldPrice,imgList) {
-    
+
+let selectedProduct = null;
+
+function changeDetails(name, newPrice, oldPrice, imgList) {
+   
     document.getElementById('p-name').innerText = name;
     document.getElementById('price').innerHTML = `<span class="text-[18px] font-bold text-[#222222]">${newPrice} </span>${oldPrice}`;
 
-   
-   
-
-   const allSlots = document.querySelectorAll('.img1');
-
+    const allSlots = document.querySelectorAll('.img1');
     allSlots.forEach((slot, index) => {
         if(imgList[index]) {
             slot.src = imgList[index];
-            
         } 
     });
+
+    
+    selectedProduct = {
+        name: name,
+        newPrice: newPrice,
+        oldPrice: oldPrice,
+        img: imgList[0] 
+    };
 }
+
+
+function triggerAddToCart() {
+    if (selectedProduct) {
+
+        cart(
+            selectedProduct.name, 
+            selectedProduct.newPrice, 
+            selectedProduct.oldPrice, 
+            selectedProduct.img, 
+            selectedProduct.newPrice 
+        );
+    } else {
+        alert("Prothome ekti product select korun!");
+    }
+}
+
+let mainCart=document.getElementById("mainCart")
+let updateCart=document.getElementById("updateCart")
+let Cartbutton=document.getElementById("Cartbutton")
+
+updateCart.addEventListener("click",()=>{
+  shopPart.classList.remove("hidden")
+  mainCart.classList.add("hidden")
+  
+  
+})
+Cartbutton.addEventListener("click",()=>{
+  shopPart.classList.add("hidden")
+  Homepage.classList.add("hidden")
+  mainCart.classList.remove("hidden")
+  loginPage.classList.add("hidden")
+  Register.classList.add("hidden")
+  pageNumbertwo.classList.add("hidden")
+  
+})
+
+
+function updateCartTotal() {
+    let subtotal = 0;
+    
+    
+    const allItemPrices = document.querySelectorAll('.cart-item-subtotal');
+
+    allItemPrices.forEach(item => {
+      
+        let priceText = item.innerText.replace(/[$,]/g, ""); 
+        let priceValue = parseFloat(priceText);
+        
+        if (!isNaN(priceValue)) {
+            subtotal += priceValue;
+        }
+    });
+
+   
+    const subtotalDisplay = document.getElementById('number');
+    const totalDisplay = document.getElementById('totalnumber');
+
+    if(subtotalDisplay) subtotalDisplay.innerText = "$" + subtotal.toFixed(2);
+    if(totalDisplay) totalDisplay.innerText = "$" + subtotal.toFixed(2);
+}
+
+
+
+function cart(name, newprice, oldprice, imgone, total) {
+    let addtoCartpart = document.getElementById("addtoCartpart");
+let newdiv = document.createElement("div");
+    newdiv.className = `flex justify-around w-full h-[151px] items-center border-t-3 border-b-3 border-black/50 mb-2`;
+
+    newdiv.innerHTML = `
+        <div class="cursor-pointer" onclick="this.parentElement.remove()">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+
+        <div class="w-[80px] h-[80px] bg-white">
+            <img src="${imgone}" alt="${name}" class="w-full h-full object-cover">
+        </div>
+
+        <div>
+            <p class="text-[20px] text-[#222222] font-semibold">${name}</p>
+        </div>
+
+        <div>
+            <p class="text-[#74787C] text-[16px] font-medium relative">
+                <span class=" cart-item-subtotal text-[18px] font-bold text-[#222222]">${newprice} </span>${oldprice}
+            </p>
+        </div>
+
+        <div class="flex">
+            <div class="w-[60px] h-[50px] border-2 border-black/50 flex justify-center items-center">
+                <p id="boxone" class="text-[18px] text-[#222222] font-semibold">0</p>
+            </div>
+            <div>
+                <div class="w-7 h-[25px] border-2 border-black/50 flex justify-center items-center"><button ><i class="fa-solid fa-angle-up"></i></button></div>
+                <div class="w-7 h-[25px] border-2 border-black/50 flex justify-center items-center"><button ><i class="fa-solid fa-angle-down"></i></button></div>
+            </div>
+        </div>
+
+        <div>
+            <p class="  text-[18px] text-[#222222] font-semibold">${total}</p>
+        </div>`;
+
+    addtoCartpart.appendChild(newdiv);
+
+
+updateCartTotal() 
+
+
+
+
+    
+}
+
+// cart section====================================================
+
+
+
+
+
+let boxone=document.getElementById("boxone")
+let buttonCart=document.getElementById("buttonCart")
+let buttonCartone=document.getElementById("buttonCartone")
+
+buttonCart.addEventListener("click", () => {
+  if (count < 100) {
+    count++;
+    boxone.innerText = count;
+    
+  }
+});
+
+buttonCartone.addEventListener("click", () => {
+ 
+  if (count > 0) {
+    count--;
+    boxone.innerText = count;
+    
+  }
+});
+
+
+
+
+let addtoCartpart=document.getElementById("addtoCartpart")
+
+
+
+
+
+
+
+
+
+
