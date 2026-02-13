@@ -222,28 +222,6 @@ listTypethree.classList.remove("hidden")
 
 
 
-let total = 0;
-const cartItemsList = document.getElementById('cart-items');
-const totalPriceDisplay = document.getElementById('total-price');
-
-
-document.querySelectorAll('.add-to-cart').forEach(button => {
-    button.addEventListener('click', () => {
-        const name = button.getAttribute('data-name');
-        const price = parseFloat(button.getAttribute('data-price'));
-
-      
-        const li = document.createElement('li');
-        li.innerText = `${name} - $${price}`;
-        cartItemsList.appendChild(li);
-
- 
-        total += price;
-        totalPriceDisplay.innerText = total.toFixed(2);
-        
-       
-    });
-});
 
 
 let plusButton = document.getElementById("plusButton");
@@ -311,7 +289,16 @@ ditels.forEach((button,index) => {
     });
 });
 
-
+function updateCartCount() {
+   
+    const itemCount = document.querySelectorAll('.cart-item-row').length;
+    
+   
+    const countDisplay = document.getElementById('cart-count');
+    if (countDisplay) {
+        countDisplay.innerText = itemCount;
+    }
+}
 
 
 
@@ -399,7 +386,14 @@ function updateCartTotal() {
     if(totalDisplay) totalDisplay.innerText = "$" + subtotal.toFixed(2);
 }
 
-
+function updateCartCount() {
+  
+    const itemCount = document.querySelectorAll('.cart-item-row').length;
+     const countDisplay = document.getElementById('cart-count');
+    if (countDisplay) {
+        countDisplay.innerText = itemCount;
+    }
+}
 
 function cart(name, newprice, oldprice, imgone, total) {
     let addtoCartpart = document.getElementById("addtoCartpart");
@@ -483,7 +477,72 @@ buttonCartone.addEventListener("click", () => {
 let addtoCartpart=document.getElementById("addtoCartpart")
 
 
+function toggleAccordion() {
+    const content = document.getElementById('accordion');
+     const arrowone = document.getElementById('arrowone');
+ arrowone.classList.toggle('rotate-180');
+    content.classList.toggle('max-h-[1000px]');
+}
 
+
+
+
+
+
+
+
+function Accordionone() {
+
+    const accordionone = document.getElementById('accordionoone');
+    const arrowtwo = document.getElementById('arrowtwo');
+    
+    accordionone.classList.toggle('max-h-[1000px]');
+    arrowtwo.classList.toggle('rotate-180');
+}
+function Accordiontwo() {
+
+    const accordiontwo = document.getElementById('accordiontwo');
+    const arrowthree = document.getElementById('arrowthree');
+    
+    accordiontwo.classList.toggle('max-h-[1000px]');
+    arrowthree.classList.toggle('rotate-180');
+}
+function Accordionthree() {
+
+    const accordionthree = document.getElementById('accordionthree');
+    const arrowfour = document.getElementById('arrowfour');
+    
+    accordionthree.classList.toggle('max-h-[1000px]');
+    arrowfour.classList.toggle('rotate-180');
+}
+function Accordionfour() {
+
+    const accordionfour = document.getElementById('accordionfour');
+    const arrowfive = document.getElementById('arrowfive');
+    
+    accordionfour.classList.toggle('max-h-[1000px]');
+    arrowfive.classList.toggle('rotate-180');
+}
+function Accordionfive() {
+
+    const accordionfive = document.getElementById('accordionfive');
+    const arrowsix = document.getElementById('arrowsix');
+   
+    
+    accordionfive.classList.toggle('max-h-[1000px]');
+    arrowsix.classList.toggle('rotate-180');
+   
+}
+function Accordionsix() {
+
+    const accordionsix = document.getElementById('accordionsix');
+    const arrowseven = document.getElementById('arrowseven');
+   
+    
+    accordionsix.classList.toggle('max-h-[1000px]');
+    arrowseven.classList.toggle('rotate-180');
+   
+}
 
 
 

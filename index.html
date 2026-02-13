@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/all.min.css">
     <link rel="stylesheet" href="src/output.css">
     <link rel="stylesheet" href="src/slick.css">
+
+
+    
 </head>
 <body class="font-display-primary1 ">
     <div class="">
@@ -124,6 +130,10 @@
             <div class="w-auto h-[50px] flex items-center ">
             
             <div class="w-[45px] h-[45px] bg-primary4 text-white flex justify-center items-center ml-4 rounded-full ">
+                <div class="relative inline-block">
+    
+    <span id="cart-count" class="absolute left-[12px] -top-7 bg-red-500 text-white text-[12px] w-5 h-5 flex justify-center items-center rounded-full">0</span>
+</div>
          <button id="Cartbutton" class=""> <i class="fa-solid fa-cart-shopping text-primary3"></i></button>
             </div>
             <div class="">
@@ -165,6 +175,133 @@
 
 
 
+<div id="" class="pb-[100px]" >
+<div class="bg-[url(../imges/slider.png)] bg-no-repeat bg-cover bg-center  pt-[140px] pb-[120px]">
+    <div class="max-w-mContainer mx-auto">
+
+        <div class="flex justify-between " >
+                 <h1 class="text-primary3 text-[48px] font-bold uppercase leading-[60px] l">Frequently asked questions</h1>
+            
+        <div class="">
+           <ul class="flex gap-x-1">
+            <li><a href="" class="text-primary5 text-[18px] font-medium group hover:text-primary1 hover:duration-500 ">Home <i class="fa-solid fa-chevron-right group-hover:rotate-180 hover:transition-all 0.6s"></i></a></li>
+            <li><a href="" class="text-primary3 text-[18px] font-semibold">FAQ's</a></li>
+           </ul>
+
+        </div>
+        </div>
+    </div>
+</div>
+
+<!-- ask part -->
+
+<div class="">
+<div class="max-w-mContainer mx-auto">
+    <div class="flex justify-between mt-[100px]">
+
+        <div class="">
+            <h3 class="text-[30px] font-semibold text-black/80">Frequently asked questions</h3>
+
+            <div class="w-[830px] mt-[40px]">
+
+               <div class=" mb-[20px] border-2 border-[#E8E8E8] rounded-lg pl-10 pr-10">
+                <div class="flex justify-between">
+                <div class=" p-[10px] cursor-pointer font-bold text-black">How can add vendor role to the customer?</div>
+                <div class="mr-[20px] mt-[7px]"><button onclick="toggleAccordion()" class="text-[20px] "><i class="fa-solid fa-angle-down transition-transform duration-700 ease-in-out" id="arrowone"></i></button></div>
+                </div>
+                <div id="accordion" class=" text-[#7B7E86] max-h-[0px] transition-[max-height] duration-[800ms]  ease-in-out overflow-hidden bg-white active:block active:max-h-[1000px]" >
+                    <p>Convallis a pellentesque nec, egestas non nisi. Nulla porttitor accumsan tincidunt. Vestibulum diam sit amet quam vehicula elementum sed sit amet dui. Curabitur aliquet quam id dui posuere blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget tortor risus.</p>
+                </div>
+               </div> 
+
+               <div class=" mb-[20px] border-2 border-[#E8E8E8] rounded-lg pl-10 pr-10">
+                <div class="flex justify-between">
+                <div class=" p-[10px] cursor-pointer font-bold text-black">What benefits a customer can take?</div>
+                <div class="mr-[20px] mt-[7px]"><button onclick="Accordionone()" class="text-[20px] "><i class="fa-solid fa-angle-down transition-transform duration-700 ease-in-out" id="arrowtwo"></i></button></div>
+                </div>
+                <div id="accordionoone" class=" text-[#7B7E86] max-h-[0px] transition-[max-height] duration-[600ms]  ease-in-out overflow-hidden bg-white active:block active:max-h-[1000px]" >
+                    <p>Convallis a pellentesque nec, egestas non nisi. Nulla porttitor accumsan tincidunt. Vestibulum diam sit amet quam vehicula elementum sed sit amet dui. Curabitur aliquet quam id dui posuere blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget tortor risus.</p>
+                </div>
+               </div> 
+               <div class=" mb-[20px] border-2 border-[#E8E8E8] rounded-lg pl-10 pr-10">
+                <div class="flex justify-between">
+                <div class=" p-[10px] cursor-pointer font-bold text-black">What is your return & exchange policy?</div>
+                <div class="mr-[20px] mt-[7px]"><button onclick="Accordiontwo()" class="text-[20px] "><i class="fa-solid fa-angle-down transition-transform duration-700 ease-in-out" id="arrowthree"></i></button></div>
+                </div>
+                <div id="accordiontwo" class=" text-[#7B7E86] max-h-[0px] transition-[max-height] duration-[600ms]  ease-in-out overflow-hidden bg-white active:block active:max-h-[1000px]" >
+                    <p>Convallis a pellentesque nec, egestas non nisi. Nulla porttitor accumsan tincidunt. Vestibulum diam sit amet quam vehicula elementum sed sit amet dui. Curabitur aliquet quam id dui posuere blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget tortor risus.</p>
+                </div>
+               </div> 
+               <div class=" mb-[20px] border-2 border-[#E8E8E8] rounded-lg pl-10 pr-10">
+                <div class="flex justify-between">
+                <div class=" p-[10px] cursor-pointer font-bold text-black">How long will it take for me to get my order?</div>
+                <div class="mr-[20px] mt-[7px]"><button onclick="Accordionthree()" class="text-[20px] "><i class="fa-solid fa-angle-down transition-transform duration-700 ease-in-out" id="arrowfour"></i></button></div>
+                </div>
+                <div id="accordionthree" class=" text-[#7B7E86] max-h-[0px] transition-[max-height] duration-[600ms]  ease-in-out overflow-hidden bg-white active:block active:max-h-[1000px]" >
+                    <p>Convallis a pellentesque nec, egestas non nisi. Nulla porttitor accumsan tincidunt. Vestibulum diam sit amet quam vehicula elementum sed sit amet dui. Curabitur aliquet quam id dui posuere blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget tortor risus.</p>
+                </div>
+               </div> 
+               <div class=" mb-[20px] border-2 border-[#E8E8E8] rounded-lg pl-10 pr-10">
+                <div class="flex justify-between">
+                <div class=" p-[10px] cursor-pointer font-bold text-black">Can I personally pick up my order?</div>
+                <div class="mr-[20px] mt-[7px]"><button onclick="Accordionfour()" class="text-[20px] "><i class="fa-solid fa-angle-down transition-transform duration-700 ease-in-out" id="arrowfive"></i></button></div>
+                </div>
+                <div id="accordionfour" class=" text-[#7B7E86] max-h-[0px] transition-[max-height] duration-[600ms]  ease-in-out overflow-hidden bg-white active:block active:max-h-[1000px]" >
+                    <p>Convallis a pellentesque nec, egestas non nisi. Nulla porttitor accumsan tincidunt. Vestibulum diam sit amet quam vehicula elementum sed sit amet dui. Curabitur aliquet quam id dui posuere blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget tortor risus.</p>
+                </div>
+               </div> 
+               <div class=" mb-[20px] border-2 border-[#E8E8E8] rounded-lg pl-10 pr-10">
+                <div class="flex justify-between">
+                <div class=" p-[10px] cursor-pointer font-bold text-black">I need to update my shipping address!</div>
+                <div class="mr-[20px] mt-[7px]"><button onclick="Accordionfive()" class="text-[20px] "><i class="fa-solid fa-angle-down transition-transform duration-700 ease-in-out" id="arrowsix"></i></button></div>
+                </div>
+                <div id="accordionfive" class=" text-[#7B7E86] max-h-[0px] transition-[max-height] duration-[600ms]  ease-in-out overflow-hidden bg-white active:block active:max-h-[1000px]" >
+                    <p>Convallis a pellentesque nec, egestas non nisi. Nulla porttitor accumsan tincidunt. Vestibulum diam sit amet quam vehicula elementum sed sit amet dui. Curabitur aliquet quam id dui posuere blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget tortor risus.</p>
+                </div>
+               </div> 
+               <div class=" mb-[20px] border-2 border-[#E8E8E8] rounded-lg pl-10 pr-10">
+                <div class="flex justify-between">
+                <div class=" p-[10px] cursor-pointer font-bold text-black">Will I pay for any customs duties and taxes?</div>
+                <div class="mr-[20px] mt-[7px]"><button onclick="Accordionsix()" class="text-[20px] "><i class="fa-solid fa-angle-down transition-transform duration-700 ease-in-out" id="arrowseven"></i></button></div>
+                </div>
+                <div id="accordionsix" class=" text-[#7B7E86] max-h-[0px] transition-[max-height] duration-[600ms]  ease-in-out overflow-hidden bg-white active:block active:max-h-[1000px]" >
+                    <p>Convallis a pellentesque nec, egestas non nisi. Nulla porttitor accumsan tincidunt. Vestibulum diam sit amet quam vehicula elementum sed sit amet dui. Curabitur aliquet quam id dui posuere blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget tortor risus.</p>
+                </div>
+               </div> 
+            </div>
+
+
+           
+        </div>
+        <div class="w-[557px] h-[445px] bg-[#F6F6F6] p-10 space-y-5">
+
+            <input type="text" placeholder="Your Name" class="bg-white w-full h-[55px] border-2 border-[#E8E8E8] rounded-lg pl-[20px] placeholder:text-[#7B7E86]">
+            <input type="text" placeholder="Email Address" class="bg-white w-full h-[55px] border-2 border-[#E8E8E8] rounded-lg pl-[20px] placeholder:text-[#7B7E86]">
+
+<textarea 
+    placeholder="Type Message" 
+    class="w-full  p-4 h-[140px] border-2 bg-white border-[#E8E8E8] rounded-lg  focus:outline-none   placeholder:text-[#7B7E86] text-gray-700 resize-none align-top"
+  ></textarea>
+            
+<button class="w-full rounded-lg py-4 text-[18px] bg-red-600 text-white font-semibold">Submit Now</button>
+
+        </div>
+    </div>
+</div>
+
+
+
+</div>
+</div>
+<!-- ask part -->
+
+
+
+
+
+
+
+
 
 
 
@@ -172,7 +309,7 @@
 
 
 <!-- shop Cart part -->
- <div id="mainCart" class="pb-[100px]">
+ <div id="mainCart" class="pb-[100px] hidden" >
 <div class="bg-[url(../imges/slider.png)] bg-no-repeat bg-cover bg-center  pt-[140px] pb-[120px]">
     <div class="max-w-mContainer mx-auto">
 
@@ -5510,19 +5647,7 @@ Halloween</h4>
     </div>
 </div>
 
-<div class="product">
-    <span>Laptop - $1000</span>
-    <button class="add-to-cart" data-name="Laptop" data-price="1000">Add to Cart</button>
-</div>
 
-<div class="product">
-    <span>Mouse - $50</span>
-    <button class="add-to-cart" data-name="Mouse" data-price="50">Add to Cart</button>
-</div>
-
-<h3>Your Cart</h3>
-<ul id="cart-items"></ul>
-<p>Total: $<span id="total-price">0</span></p>
 
 <script src="js/jquery-1.12.4.min.js"></script>
 
