@@ -76,13 +76,13 @@
 
 <div class="">
     <div class="max-w-mContainer mx-auto relative">
-        <div class="flex justify-between h-[136px] items-center overflow-hidden">
+        <div class="flex flex-col items-center text-center lg:flex-row lg:justify-between h-[200px]   lg:h-[136px] overflow-hidden">
            <div class="">
             <picture>
                 <img src="imges/logo.png" alt="imges/logo.png">
             </picture>
            </div> 
-           <div class="relative border-2 border-primary2 rounded-[5px]">
+           <div class="relative border-2 border-primary2 flex items-center w-full lg:w-auto overflow-hidden rounded-[5px]">
 <div class="">
     <div class="absolute ml-31 mt-5 pointer-events-none">
     <svg class="w-4 h-4 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -105,7 +105,7 @@
     </select>
 
     
-            <input type="text" placeholder="Search Keywords..." class="w-[600px] h-[50px] border-none  pl-[10px] focus:outline-none font-medium " >
+            <input type="text" placeholder="Search Keywords..." class="w-[600px] lg:h-[50px] h-[50px] border-none  pl-[10px] focus:outline-none font-medium " >
             <button class="absolute top-[4px] right-[4px] text-black px-7 py-3 bg-primary1 uppercase text-[12px] font-bold text-white rounded-[5px] cursor-pointer hover:bg-white hover:border-1 border-primary1 hover:duration-500 hover:text-primary1 group ">Search Here<i class="fa-solid fa-magnifying-glass -rotate-50 hover:transition-all 0.10s group-hover:rotate-22  ml-[10px] text-[16px]"></i></button>
 </div>
            </div> 
@@ -144,29 +144,53 @@
            </div>    
         </div>
         
- <div class="flex justify-between items-center w-[1440px]  bg-primary1 h-[55px] rounded-[5px] absolute -mt-[27px] before:absolute before:w-[1100px] before:h-[55px] before:contant-[''] before:bg-primary3 before:[clip-path:polygon(0_0,_98%_0,_100%_30%,_100%_100%,_0_100%)] before:rounded-tl-[5px] before:rounded-bl-[5px]">
-          
-                <div class="">
-                <ul class="flex  top-[50px]">
-                    <li  class="px-5 hover:text-primary1 hover:duration-500 before:absolute before:transition-all 0.3s before:origin-left  before:w-[100px] before:h-[0px] before:flex  before:items-center before:justify-center  hover:before:h-[50px] before:mt-12 before:-ml-5  z-20   hover:before:content-['home'] before:bg-white before:text-center  "><button id="homePagebtn" class="text-white font-medium text-[14px] uppercase" >Home</button></li>
-                    <li class="px-5 hover:text-primary1 hover:duration-500 before:absolute before:transition-all 0.3s before:w-[100px] before:h-[0px] before:flex  before:items-center before:justify-center  hover:before:h-[50px] before:mt-12 before:-ml-5  z-20   hover:before:content-['Shop'] before:bg-white before:text-center"><button id="shopeBtn" class="text-white font-medium text-[14px] uppercase">Shop</button></li>
-                    <li class="px-5 hover:text-primary1 hover:duration-500 before:absolute before:transition-all 0.3s before:w-[100px] before:h-[0px] before:flex  before:items-center before:justify-center  hover:before:h-[50px] before:mt-12 before:-ml-5  z-20   hover:before:content-['Women'] before:bg-white before:text-center"><button class="text-white font-medium text-[14px] uppercase">Women</button></li>
-                    <li class="px-5 hover:text-primary1 hover:duration-500 before:absolute before:transition-all 0.3s before:w-[100px] before:h-[0px] before:flex  before:items-center before:justify-center  hover:before:h-[50px] before:mt-12 before:-ml-5  z-20   hover:before:content-['Man'] before:bg-white before:text-center"><button class="text-white font-medium text-[14px] uppercase">Man</button></li>
-                    <li class="px-5 hover:text-primary1 hover:duration-500 before:absolute before:transition-all 0.3s before:w-[100px] before:h-[0px] before:flex  before:items-center before:justify-center  hover:before:h-[50px] before:mt-12 before:-ml-5  z-20   hover:before:content-['Pages'] before:bg-white before:text-center"><button class="text-white font-medium text-[14px] uppercase">Pages</button></li>
-                    <li class="px-5 hover:text-primary1 hover:duration-500 before:absolute before:transition-all 0.3s before:w-[100px] before:h-[0px] before:flex  before:items-center before:justify-center  hover:before:h-[50px] before:mt-12 before:-ml-5  z-20   hover:before:content-['Blog'] before:bg-white before:text-center"><button class="text-white font-medium text-[14px] uppercase">Blog</button></li>
-                    <li class="px-5 hover:text-primary1 hover:duration-500 before:absolute before:transition-all 0.3s before:w-[100px] before:h-[0px] before:flex  before:items-center before:justify-center  hover:before:h-[50px] before:mt-12 before:-ml-3  z-20   hover:before:content-['Contact'] before:bg-white before:text-center"><button class="text-white font-medium text-[14px] uppercase">Contact</button></li>
-                </ul>
-                </div>
-              
-            
-            <div class="  ">
-               <div class="flex w-[319px]">
-                <h4 class="text-[16px] text-white pl-[10px]">Get 30% Discount Now</h4>
-                <a href="" class="uppercase text-[12px] font-bold text-primary1 rounded-[50px] py-1 px-4 bg-white inline-block ml-[20px]">Sale</a>
-               </div>
+<div class="relative w-full max-w-[1440px] mx-auto px-4 lg:px-0">
+    <div class="flex flex-col lg:flex-row justify-between items-center w-full lg:h-[55px] bg-primary1 rounded-[5px] lg:absolute lg:-mt-[27px] 
+                lg:before:absolute lg:before:w-[75%] lg:before:h-[55px] lg:before:content-[''] lg:before:bg-primary3 
+                lg:before:[clip-path:polygon(0_0,_98%_0,_100%_30%,_100%_100%,_0_100%)] lg:before:rounded-tl-[5px] lg:before:rounded-bl-[5px] z-30">
+        
+        <div class="w-full lg:w-auto z-40">
+            <ul class="flex flex-wrap lg:flex-nowrap justify-center lg:justify-start items-center py-3 lg:py-0">
+                <li class="relative px-3 lg:px-5 group">
+                    <button id="homePagebtn" class="text-white font-medium text-[12px] lg:text-[14px] uppercase hover:text-primary1 transition-colors duration-500">Home</button>
+                    <div class="hidden lg:flex absolute left-0 -bottom-12 w-full h-0 group-hover:h-[50px] bg-white items-center justify-center transition-all duration-300 overflow-hidden text-primary1 font-bold uppercase text-[12px] shadow-md">Home</div>
+                </li>
+                <li class="relative px-3 lg:px-5 group">
+                    <button id="shopeBtn" class="text-white font-medium text-[12px] lg:text-[14px] uppercase hover:text-primary1 transition-colors duration-500">Shop</button>
+                    <div class="hidden lg:flex absolute left-0 -bottom-12 w-full h-0 group-hover:h-[50px] bg-white items-center justify-center transition-all duration-300 overflow-hidden text-primary1 font-bold uppercase text-[12px] shadow-md">Shop</div>
+                </li>
+                <li class="relative px-3 lg:px-5 group">
+                    <button class="text-white font-medium text-[12px] lg:text-[14px] uppercase hover:text-primary1 transition-colors duration-500">Women</button>
+                    <div class="hidden lg:flex absolute left-0 -bottom-12 w-full h-0 group-hover:h-[50px] bg-white items-center justify-center transition-all duration-300 overflow-hidden text-primary1 font-bold uppercase text-[12px] shadow-md">Women</div>
+                </li>
+                <li class="relative px-3 lg:px-5 group">
+                    <button class="text-white font-medium text-[12px] lg:text-[14px] uppercase hover:text-primary1 transition-colors duration-500">Man</button>
+                    <div class="hidden lg:flex absolute left-0 -bottom-12 w-full h-0 group-hover:h-[50px] bg-white items-center justify-center transition-all duration-300 overflow-hidden text-primary1 font-bold uppercase text-[12px] shadow-md">Man</div>
+                </li>
+                <li class="relative px-3 lg:px-5 group">
+                    <button class="text-white font-medium text-[12px] lg:text-[14px] uppercase hover:text-primary1 transition-colors duration-500">Pages</button>
+                    <div class="hidden lg:flex absolute left-0 -bottom-12 w-full h-0 group-hover:h-[50px] bg-white items-center justify-center transition-all duration-300 overflow-hidden text-primary1 font-bold uppercase text-[12px] shadow-md">Pages</div>
+                </li>
+                <li class="relative px-3 lg:px-5 group">
+                    <button class="text-white font-medium text-[12px] lg:text-[14px] uppercase hover:text-primary1 transition-colors duration-500">Blog</button>
+                    <div class="hidden lg:flex absolute left-0 -bottom-12 w-full h-0 group-hover:h-[50px] bg-white items-center justify-center transition-all duration-300 overflow-hidden text-primary1 font-bold uppercase text-[12px] shadow-md">Blog</div>
+                </li>
+                <li class="relative px-3 lg:px-5 group">
+                    <button class="text-white font-medium text-[12px] lg:text-[14px] uppercase hover:text-primary1 transition-colors duration-500">Contact</button>
+                    <div class="hidden lg:flex absolute left-0 -bottom-12 w-full h-0 group-hover:h-[50px] bg-white items-center justify-center transition-all duration-300 overflow-hidden text-primary1 font-bold uppercase text-[12px] shadow-md">Contact</div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="w-full lg:w-auto bg-primary1 lg:bg-transparent py-3 lg:py-0 rounded-b-[5px] lg:rounded-none z-40">
+            <div class="flex items-center justify-center lg:justify-end px-4 lg:w-[350px]">
+                <h4 class="text-[13px] lg:text-[16px] text-white whitespace-nowrap">Get 30% Discount Now</h4>
+                <a href="" class="uppercase text-[10px] lg:text-[12px] font-bold text-primary1 rounded-[50px] py-1 px-4 bg-white inline-block ml-[10px] lg:ml-[20px] hover:bg-primary3 hover:text-white transition-all">Sale</a>
             </div>
-           
+        </div>
+        
     </div>
+</div>
        
     </div>
 </div>
