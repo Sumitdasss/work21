@@ -480,6 +480,13 @@ let addtoCartpart=document.getElementById("addtoCartpart")
 function toggleAccordion() {
     const content = document.getElementById('accordion');
      const arrowone = document.getElementById('arrowone');
+
+ const accordionone = document.getElementById('accordionoone');
+    const arrowtwo = document.getElementById('arrowtwo');
+    accordionone.classList.remove('max-h-[1000px]');
+    arrowtwo.classList.remove('rotate-180');
+
+
  arrowone.classList.toggle('rotate-180');
     content.classList.toggle('max-h-[1000px]');
 }
@@ -494,15 +501,27 @@ function toggleAccordion() {
 function Accordionone() {
 
     const accordionone = document.getElementById('accordionoone');
-    const arrowtwo = document.getElementById('arrowtwo');
+    const arrowtwo = document.getElementById('arrowtwo');  
+const content = document.getElementById('accordion');
+     const arrowone = document.getElementById('arrowone');
+
+arrowone.classList.remove('rotate-180');
+    content.classList.remove('max-h-[1000px]');
+
     
     accordionone.classList.toggle('max-h-[1000px]');
     arrowtwo.classList.toggle('rotate-180');
+    
 }
 function Accordiontwo() {
 
     const accordiontwo = document.getElementById('accordiontwo');
     const arrowthree = document.getElementById('arrowthree');
+
+     const accordionone = document.getElementById('accordionoone');
+    const arrowtwo = document.getElementById('arrowtwo');  
+ accordionone.classList.remove('max-h-[1000px]');
+    arrowtwo.classList.remove('rotate-180');
     
     accordiontwo.classList.toggle('max-h-[1000px]');
     arrowthree.classList.toggle('rotate-180');
@@ -511,6 +530,11 @@ function Accordionthree() {
 
     const accordionthree = document.getElementById('accordionthree');
     const arrowfour = document.getElementById('arrowfour');
+
+    const accordiontwo = document.getElementById('accordiontwo');
+    const arrowthree = document.getElementById('arrowthree');
+accordiontwo.classList.remove('max-h-[1000px]');
+    arrowthree.classList.remove('rotate-180');
     
     accordionthree.classList.toggle('max-h-[1000px]');
     arrowfour.classList.toggle('rotate-180');
@@ -519,6 +543,11 @@ function Accordionfour() {
 
     const accordionfour = document.getElementById('accordionfour');
     const arrowfive = document.getElementById('arrowfive');
+
+    const accordionthree = document.getElementById('accordionthree');
+    const arrowfour = document.getElementById('arrowfour');
+accordionthree.classList.remove('max-h-[1000px]');
+    arrowfour.classList.remove('rotate-180');
     
     accordionfour.classList.toggle('max-h-[1000px]');
     arrowfive.classList.toggle('rotate-180');
@@ -527,7 +556,10 @@ function Accordionfive() {
 
     const accordionfive = document.getElementById('accordionfive');
     const arrowsix = document.getElementById('arrowsix');
-   
+   const accordionfour = document.getElementById('accordionfour');
+    const arrowfive = document.getElementById('arrowfive');
+accordionfour.classList.remove('max-h-[1000px]');
+    arrowfive.classList.remove('rotate-180');
     
     accordionfive.classList.toggle('max-h-[1000px]');
     arrowsix.classList.toggle('rotate-180');
@@ -537,7 +569,10 @@ function Accordionsix() {
 
     const accordionsix = document.getElementById('accordionsix');
     const arrowseven = document.getElementById('arrowseven');
-   
+    const accordionfive = document.getElementById('accordionfive');
+    const arrowsix = document.getElementById('arrowsix');
+accordionfive.classList.remove('max-h-[1000px]');
+    arrowsix.classList.remove('rotate-180');
     
     accordionsix.classList.toggle('max-h-[1000px]');
     arrowseven.classList.toggle('rotate-180');
